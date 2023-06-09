@@ -25,10 +25,12 @@ public class BlogDto extends Blog {
     @Column(name = "id")
     private Integer id;
 
+    @Size(min = 10, max = 50)
     @NotNull
     @Column(name = "title")
     private String title;
 
+    @Size(min = 100, max = 5000)
     @NotNull
     @Column(name = "body")
     private String body;
